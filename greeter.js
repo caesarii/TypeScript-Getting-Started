@@ -1,5 +1,5 @@
 function greeter(person) {
-    return "Hello, " + person;
+    return "Hello, " + person.firstName + " " + person.lastName;
 }
-var user = ["Qinghe"];
+var user = { firstName: 'qinghe', lastName: 'wang' };
 document.body.innerHTML = greeter(user);
